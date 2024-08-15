@@ -1,0 +1,64 @@
+/* Optional custom styles */
+.table-hover tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+.btn-sm {
+    margin-right: 5px;
+}
+.container {
+    max-width: 1200px;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #e49bff;
+}
+
+.thead-dark th {
+    background-color: #acf5ff;
+    color: #0f0f0f;
+}
+
+.table th, .table td {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.table {
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.btn-primary, .btn-danger {
+    margin: 0 5px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+

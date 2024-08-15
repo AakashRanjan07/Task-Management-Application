@@ -1,0 +1,43 @@
+.current-datetime {
+    font-size: 1.2rem;
+    color: #425d75;
+}
+
+.greeting {
+    font-size: 2.7rem;
+    color: #30897b;
+    margin-top: 10px;
+}
+body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .task-container {
+    max-width: 800px; 
+  }
+  .task-item {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+  }
+  .card-header {
+    font-weight: bold; /* Make the card header text bold */
+  }
+  
+  .table tr td {
+    color: #3f4d54; /* Set the notification text color to dark gray */
+  }
+  .notification-cell {
+    padding: 10px 15px; /* Add some padding */
+    border-radius: 10px; /* Rounded corners */
+    border: 1px solid #ddd; /* Thin border */
+  }
+
+ 
+
+
+
+
+

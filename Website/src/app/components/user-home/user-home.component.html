@@ -1,0 +1,302 @@
+<div class="head-section">
+  <nav class="navbar navbar-expand-lg py-4">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#"><i class="fa-brands fa-slack" style="color: #000000"></i> Task Ace</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item ms-0 ms-md-3">
+            <a class="nav-link" aria-current="page" href="#">Home</a>
+          </li>
+
+          <li class="nav-item ms-0 ms-md-3">
+            <a [routerLink]="['about']" class="nav-link" href="#">About </a>
+          </li>
+          <li class="nav-item ms-0 ms-md-3">
+            <a [routerLink]="['admin']" class="nav-link" href="#">Admin </a>
+          </li>
+          <li class="nav-item ms-0 ms-md-3">
+            <a [routerLink]="['login']" class="nav-link" href="#">User</a>
+          </li>
+
+          <li class="nav-item ms-0 ms-md-3">
+            <a [routerLink]="['register']" class="px-4 py-2 btn btn-primary" href="#">Start for free
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero-section">
+    <div class="container">
+      <div class="row align-items-center py-3 g-5">
+        <div class="col-12 col-md-6">
+          <div class="text-center text-md-start">
+            <h1 class="display-md-2 display-5 fw-bold text-dark pb-2">
+              <span class="text-primary">Organize </span>your work and life,
+              finally.
+            </h1>
+            <p class="lead">
+              Simplify life for both you and your team. The world’s #1 task
+              manager and to-do list app.
+            </p>
+            <button [routerLink]="['register']" class="btn btn-primary px-5 py-3 mt-3 fs-5 fw-medium" type="button">
+              Start for free
+            </button>
+          </div>
+        </div>
+
+
+        <div class="col-12 col-md-6">
+          <img
+            style="mix-blend-mode: multiply;"
+            src="https://img.freepik.com/free-vector/tiny-business-people-manager-tasks-goals-accomplishment-chart-task-management-project-managers-tool-task-management-software-concept_335657-2432.jpg"
+            class="img-fluid"
+            alt="a man using vr gadget"
+          />
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+
+<div class="container">
+  <div class="row align-items-center gx-3 gy-5 py-5 mt-5">
+    <div class="col-12 col-md-12 col-lg-5">
+      <img
+        src="https://st2.depositphotos.com/4230659/47410/v/450/depositphotos_474107832-stock-illustration-isometric-project-deadline-time-management.jpg"
+        class="img-fluid mx-auto d-block" alt="a man using vr gadget" />
+    </div>
+    <div class="col-12 col-md-12 text-center text-lg-start col-lg-7">
+      <h2 class="fw-bold text-primary fs-1 pb-3">About Task Ace</h2>
+      <p class="about-text">
+        Task Ace helps you conquer your to-do list with a focus on organization
+        and clarity. It offers multiple views to prioritize tasks, like "Today"
+        to see your daily agenda or "Upcoming" for a bird's-eye view of your
+        week or month. You can structure your tasks with projects and
+        subprojects, making it easy to manage complex workflows. Task Ace also
+        allows setting deadlines and reminders, assigning labels for further
+        filtering, and collaborating with others on shared projects.
+      </p>
+      <p class="about-text">
+        Task Ace boasts features to enhance your productivity. You can capture
+        tasks with voice commands or quickly add them from anywhere using
+        shortcuts. Location-based reminders ensure you don't forget errands when
+        you're out, and karma points gamify the process, keeping you motivated.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="features-section py-5">
+  <div class="container">
+    <h2 class="fs-1 fw-bold text-center pt-5 pb-5 text-primary">
+      Key Features
+    </h2>
+    <div class="row g-5 pb-5">
+      <div class="col-md-6 col-lg-4">
+        <div class="card px-3 py-4 shadow-sm">
+          <i class="bi bi-lightbulb"></i>
+          <h3 class="f5">Innovative Technology</h3>
+          <p class="card-text lead">
+            Explore website featuring the latest and most innovative
+            technologies.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card px-3 py-4 shadow-sm blue-bg">
+          <i class="bi bi-shield-check"></i>
+          <h3 class="f5">Quality Assurance</h3>
+          <p class="card-text lead">
+            Our team ensures that our website meets high-quality performance.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 offset-md-3 offset-0 offset-lg-0">
+        <div class="card px-3 py-4 shadow-sm">
+          <i class="bi bi-hourglass-split"></i>
+          <h3 class="f5">Timely Delivery</h3>
+          <p class="card-text lead">
+            Experience prompt and reliable delivery services to get your task
+            completed on time.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container my-5">
+  <div class="row align-items-center justify-content-center">
+    <div class="col-12">
+      <h2 class="fs-1 fw-bold text-primary text-center pb-5">
+        The fastest way to get tasks out of your head
+      </h2>
+      <ul class="nav nav-tabs d-flex flx-wrap justify-content-center" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active me-md-3 me-1 text-dark" id="home-tab" data-bs-toggle="tab"
+            data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
+            Ease in
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active me-md-3 me-1 text-dark" id="vr" data-bs-toggle="tab"
+            data-bs-target="#vr-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane"
+            aria-selected="false">
+            Organize & Customize
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active me-md-3 me-1 text-dark" id="headphones-tab" data-bs-toggle="tab"
+            data-bs-target="#headphones-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane"
+            aria-selected="false">
+            Delegate
+          </button>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+          tabindex="0">
+          <div class="row g-4 mt-5 justify-content-center align-items-center">
+            <div class="col-12 col-md-4">
+              <img
+                src="https://media.istockphoto.com/id/1304715784/vector/work-and-life-balance-tiny-woman-sitting-in-lotus-position-and-keep-harmony-choose-between.jpg?s=612x612&w=0&k=20&c=2oEMNKI8TuqE0QvetiK0_6xWI1ut3VwheOzqNZYG9kg="
+                alt="" class="img-fluid d-block mx-auto" />
+            </div>
+            <div class="col-12 col-md-4">
+              <img
+                src="https://static.vecteezy.com/system/resources/previews/027/989/500/original/project-management-concept-organize-and-plan-work-project-businessman-teamwork-meeting-for-project-planning-concept-cartoon-character-design-flat-illustration-on-white-background-vector.jpg"
+                alt="" class="img-fluid d-block mx-auto" />
+            </div>
+            <div class="col-12 col-md-4">
+              <img
+                src="https://media.istockphoto.com/id/1209705395/vector/delegation-of-authority-concept-overload-business-woman-delegate-tasks-to-employees-office.jpg?s=612x612&w=0&k=20&c=YD2ZtbnkViDWXrLAciSKnLFB0nYofQRMtdOKFtNCCis="
+                alt="" class="img-fluid d-block mx-auto" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container py-5 mb-5">
+  <div class="row">
+    <div class="col-12">
+      <h2 class="fw-bold text-primary fs-1 pb-3 text-center">How it works</h2>
+
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button fs-3 text-dark fw-medium" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              I accidentally marked a task as completed, but it's not done yet.
+              How can I undo that?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p class="lead">
+                Task Ace allows undoing mistakes.Click on the circle next to the
+                task to mark it incomplete again. Alternatively, right-click on
+                the task and select "Mark Incomplete" from the menu.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed fs-3 text-dark fw-medium" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              I want to see how much progress I've made on a project. Does Task
+              Ace offer any way to track that?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p class="lead">
+                The feature of tracking the progress is not being implemented
+                yet. Our team will definetly add this feature and let you know
+                about it. Meanwhile, You can now change the progress of the
+                task.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed fs-3 text-dark fw-medium" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              I have a long list with many tasks. How can I prioritize the most
+              important ones?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p class="lead">
+                Task Ace offers different ways to prioritize tasks: Use priority
+                levels: Click on the star icon next to a task and choose a
+                priority level (1-4). Higher numbers indicate higher importance.
+                Drag and drop tasks: Reorder your task list by dragging and
+                dropping tasks to change their priority visually.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer-section py-5 fw-bold">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <h1 style="color: black">
+          <i class="fa-brands fa-slack" style="color: #000000"></i> Task Ace
+        </h1>
+        <p class="footer-text">
+          Join millions of people who organize work and life with Task Ace.
+        </p>
+      </div>
+      <div class="col-md-3">
+        <h5 class="footer-heading">Features</h5>
+        <ul class="footer-list">
+          <li><a href="#">How It Works</a></li>
+          <li><a href="#">For Teams</a></li>
+          <li><a href="#">Pricing</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h5 class="footer-heading">Resources</h5>
+        <ul class="footer-list">
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Productivity Methods</a></li>
+          <li><a href="#">Status</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h5 class="footer-heading">Company</h5>
+        <ul class="footer-list">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+        <div class="social-icons">
+          <a href="#"><i class="bi bi-twitter"></i></a>
+          <a href="#"><i class="bi bi-youtube"></i></a>
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom text-center text-dark mt-2">
+      <a href="#">Security</a> | <a href="#">Privacy</a> |
+      <a href="#">Terms</a> © Task Ace.
+    </div>
+  </div>
+</div>

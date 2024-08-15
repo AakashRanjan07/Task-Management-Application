@@ -1,0 +1,140 @@
+
+
+* {
+    --primary-color: #3498db;
+  }
+  
+  body {
+    color: #555; 
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .navbar-brand {
+    font-size: 50px;
+  }
+  
+  .nav-link {
+    font-size: 18px !important;
+    font-weight: 500;
+  }
+  
+  .head-section {
+    background-image: linear-gradient(180deg, #c4b6fd, #93acfc);
+  }
+  
+  .navbar-brand,
+  .text-primary {
+    color: #0a58ca !important;
+  }
+  
+  .btn-primary {
+    background-color: #0a58ca !important;
+    border: none;
+  }
+  
+  .nav-link:hover {
+    color: #0a58ca;
+  }
+  
+  p {
+    font-size: 18px;
+  }
+  .btn-primary:hover {
+    background-color: #257dfd !important;
+  }
+  
+  .blue-bg {
+    background-color: #0a58ca;
+    color: #fff;
+  }
+  
+  .ionicons {
+    color: #0a58ca;
+    background-color: #f2f2f2;
+    padding: 10px;
+    height: 30px;
+    width: 30px;
+    margin-bottom: 12px;
+  }
+  
+  .nav-tabs {
+    border: none;
+  }
+  
+  .nav-tabs .active {
+    background-color: #0a67ca !important;
+    border: none;
+    color: #fff !important;
+  }
+  
+  .footer-section {
+    background-image: linear-gradient(180deg, #4e73df, #658cee);
+    border: none;
+    color: #fff !important;
+  }
+
+  .footer-section {
+  background-color: #f8f4f1;
+}
+
+.footer-logo {
+  width: 50px;
+  height: auto;
+}
+
+.footer-text {
+  font-size: 1rem;
+  color: #333;
+  margin-top: 10px;
+}
+
+.footer-heading {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-list li {
+  margin-bottom: 10px;
+}
+
+.footer-list a {
+  color: #333;
+  text-decoration: none;
+}
+
+.footer-list a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  color: #333;
+  font-size: 1.5rem;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  font-size: 0.875rem;
+  color: #777;
+  margin-top: 20px;
+}
+
+.footer-bottom a {
+  color: #777;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}

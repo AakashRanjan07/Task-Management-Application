@@ -1,0 +1,114 @@
+<div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6 text-center">
+        <h1>Welcome</h1>
+        <button class="btn btn-primary m-3" (click)="toggleAdminLogin()">Admin</button>
+        <button class="btn btn-secondary m-3" (click)="toggleUserLogin()">User</button>
+      </div>
+    </div>
+  
+    <div class="row justify-content-center mt-3" *ngIf="showAdminLogin">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title text-center mb-4">Admin Login</h2>
+            <form>
+              <div class="form-group">
+                <label for="adminEmail">Email</label>
+                <input type="email" class="form-control" id="adminEmail" required>
+              </div>
+              <div class="form-group">
+                <label for="adminPassword">Password</label>
+                <input type="password" class="form-control" id="adminPassword" required>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Login</button>
+            </form>
+            <div class="text-center mt-3">
+              <a (click)="toggleAdminSignup()">Don't have an account? Sign up</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="row justify-content-center mt-3" *ngIf="showAdminSignup">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title text-center mb-4">Admin Signup</h2>
+            <form>
+              <div class="form-group">
+                <label for="adminName">Name</label>
+                <input type="text" class="form-control" id="adminName" required>
+              </div>
+              <div class="form-group">
+                <label for="adminEmail">Email</label>
+                <input type="email" class="form-control" id="adminEmail" required>
+              </div>
+              <div class="form-group">
+                <label for="adminPassword">Password</label>
+                <input type="password" class="form-control" id="adminPassword" required>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+            </form>
+            <div class="text-center mt-3">
+              <a (click)="toggleAdminLogin()">Already have an account? Login</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="row justify-content-center mt-3" *ngIf="showUserLogin">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title text-center mb-4">User Login</h2>
+            <form>
+              <div class="form-group">
+                <label for="userEmail">Email</label>
+                <input type="email" class="form-control" id="userEmail" required>
+              </div>
+              <div class="form-group">
+                <label for="userPassword">Password</label>
+                <input type="password" class="form-control" id="userPassword" required>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Login</button>
+            </form>
+            <div class="text-center mt-3">
+              <a (click)="toggleUserSignup()">Don't have an account? Sign up</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="row justify-content-center mt-3" *ngIf="showUserSignup">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title text-center mb-4">User Signup</h2>
+            <form>
+              <div class="form-group">
+                <label for="userName">Name</label>
+                <input type="text" class="form-control" id="userName" required>
+              </div>
+              <div class="form-group">
+                <label for="userEmail">Email</label>
+                <input type="email" class="form-control" id="userEmail" required>
+              </div>
+              <div class="form-group">
+                <label for="userPassword">Password</label>
+                <input type="password" class="form-control" id="userPassword" required>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+            </form>
+            <div class="text-center mt-3">
+              <a (click)="toggleUserLogin()">Already have an account? Login</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

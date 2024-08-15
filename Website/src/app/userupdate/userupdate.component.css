@@ -1,0 +1,29 @@
+.custom-form {
+    max-width: 500px; /* Adjust form width as needed */
+    margin: auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .custom-form .form-label {
+    font-weight: bold;
+    color: #495057;
+  }
+
+  .custom-form .btn-update {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+
+  .custom-form .btn-update:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+
+  .card-title {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 1rem;
+  }

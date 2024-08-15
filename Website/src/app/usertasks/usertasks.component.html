@@ -1,0 +1,74 @@
+<!-- 
+<div class="container mt-5">
+    <div class="d-flex justify-content-end mb-3">
+        <button class="btn btn-success" [routerLink]="['/layout/useradd-task']">
+            <i class="fas fa-plus"></i> Add Task
+        </button>
+    </div>
+    <table class="table table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Tasks Title</th>
+                <th scope="col">Start Date</th>
+                <th scope="col">End Date</th>
+                <th scope="col">Priority</th>
+                <th scope="col">Status</th>
+                <th scope="col">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let task of tasks">
+                <td>{{ task.title }}</td>
+                <td>{{ formatDate(task.startDate) }}</td>
+                <td>{{ formatDate(task.dueDate) }}</td>
+                <td>{{ task.priority }}</td>
+                <td>{{ task.status }}</td>
+                <td>
+                    <button class="btn btn-primary btn-sm" [routerLink]="['/layout/userupdate-task', task.id]">
+                        <i class="fas fa-edit"></i>
+                    </button>
+                    <button class="btn btn-danger btn-sm" [routerLink]="['/layout/userdelete-task', task.id]">
+                        <i class="fas fa-trash-alt"></i>
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div> -->
+<div class="container mt-5">
+    <div class="d-flex justify-content-end mb-3">
+      <button class="btn btn-success" [routerLink]="['/layout/useradd-task']">
+        <i class="fas fa-plus"></i> Add Task
+      </button>
+    </div>
+    <table class="table table-hover">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Tasks Title</th>
+          <th scope="col">Start Date</th>
+          <th scope="col">End Date</th>
+          <th scope="col">Priority</th>
+          <th scope="col">Status</th>
+          <th scope="col">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let task of tasks">
+          <td>{{ task.title }}</td>
+          <td>{{ formatDate(task.startDate) }}</td>
+          <td>{{ formatDate(task.dueDate) }}</td>
+          <td>{{ task.priority }}</td>
+          <td>{{ task.status }}</td>
+          <td>
+            <button class="btn btn-primary btn-sm" [routerLink]="['/layout/userupdate-task', task.id]">
+              <i class="fas fa-edit"></i>
+            </button>
+            <button class="btn btn-danger btn-sm" [routerLink]="['/layout/userdelete-task', task.id]">
+              <i class="fas fa-trash-alt"></i>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

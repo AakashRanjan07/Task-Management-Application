@@ -1,0 +1,81 @@
+<!-- <div class="container mt-4">
+  <h1>Task List</h1>
+
+  <ul class="list-group">
+    <li *ngFor="let task of tasks" class="list-group-item mb-3">
+
+      <h4 class="mb-1">{{ task.title }}</h4> 
+      <div class="row">
+        <div class="col-md-6">
+          <p class="mb-1"><strong>Start Date: </strong> {{ task.startDate }}</p>
+          <p class="mb-1"><strong>Due Date: </strong> {{ task.dueDate}}</p>
+        </div>
+        <div class="col-md-3">
+          <p class="mb-1"><strong>Priority: </strong> <span [ngClass]="{'text-danger': task.priority === 'High', 'text-warning': task.priority === 'Medium', 'text-success': task.priority === 'Low'}">{{ task.priority }}</span></p>
+        </div>
+        <div class="col-md-3">
+          <p class="mb-1"><strong>Status: </strong> <span [ngClass]="{'text-primary': task.status === 'Pending', 'text-warning': task.status === 'InProgress', 'text-success': task.status === 'Completed'}">{{ task.status }}</span></p>
+        </div>
+        <div class="col-md-3">
+          <p class="mb-1"><strong>AssignTo: </strong>{{ task.assignTo }}</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <a [routerLink]="['update-task',task.id]" class="btn btn-sm btn-primary"><i class="fas fa-pencil-alt"></i> Update</a>
+        </div>
+        
+        <div class="col-md-6 text-right">
+          <a [routerLink]="['delete-task',task.id]" class="btn btn-sm btn-danger"><i class="fas fa-trash-alt"></i> Delete</a>
+        </div>
+      </div>
+    </li>
+  </ul>
+
+</div> -->
+<div class="container mt-4">
+  <h1>Task List</h1>
+
+  <ul class="list-group">
+    <li *ngFor="let task of tasks" class="list-group-item mb-3">
+
+      <h4 class="mb-1">{{ task.title }}</h4> 
+      <div class="row">
+        <div class="col-md-6">
+          <p class="mb-1"><strong>Start Date: </strong> {{ task.startDate | date:'shortDate' }}</p>
+          <p class="mb-1"><strong>Due Date: </strong> {{ task.dueDate | date:'shortDate' }}</p>
+        </div>
+        <div class="col-md-3">
+          <p class="mb-1"><strong>Priority: </strong> 
+            <span [ngClass]="{'text-danger': task.priority === 'High', 'text-warning': task.priority === 'Medium', 'text-success': task.priority === 'Low'}">{{ task.priority }}</span>
+          </p>
+        </div>
+        <div class="col-md-3">
+          <p class="mb-1"><strong>Status: </strong> 
+            <span [ngClass]="{'text-primary': task.status === 'Pending', 'text-warning': task.status === 'InProgress', 'text-success': task.status === 'Completed'}">{{ task.status }}</span>
+          </p>
+        </div>
+        <div class="col-md-3">
+          <p class="mb-1"><strong>Assign To: </strong>{{ task.assignTo }}</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <a [routerLink]="['/update-task', task.id]" class="btn btn-sm btn-primary">
+            <i class="fas fa-pencil-alt"></i> Update
+          </a>
+        </div>
+        
+        <div class="col-md-6 text-right">
+          <a [routerLink]="['/delete-task', task.id]" class="btn btn-sm btn-danger">
+            <i class="fas fa-trash-alt"></i> Delete
+          </a>
+        </div>
+      </div>
+    </li>
+  </ul>
+
+</div>
+

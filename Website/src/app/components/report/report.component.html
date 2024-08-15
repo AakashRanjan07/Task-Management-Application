@@ -1,0 +1,37 @@
+<div class="container mt-4">
+  <div class="card col-12">
+    <div class="card-header text-center">
+      <h1>Report</h1>
+    </div>
+    <div class="card-body">
+      <form class="row">
+        <div class="col-md-6 mb-3">
+          <div class="form-group d-flex align-items-center">
+            <label for="startDate" class="col-form-label text-right pr-0">
+              <i class="fas fa-calendar-alt mr-1"></i> Start Date:
+            </label>
+            <div class="col">
+              <input type="date" id="startDate" [(ngModel)]="startDate" name="startDate" class="form-control">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <div class="form-group d-flex align-items-center">
+            <label for="endDate" class="col-form-label text-right pr-0">
+              <i class="fas fa-calendar-alt mr-1"></i> End Date: 
+            </label>
+            <div class="col">
+              <input type="date" id="endDate" [(ngModel)]="endDate" name="endDate" class="form-control">
+             
+            </div>
+          </div>
+        </div>
+        <div class="col-12 text-center mt-3">
+          <button type="button" class="btn btn-primary btn-block" (click)="downloadReport()">
+            <i class="fas fa-download mr-1"></i> Download Report
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

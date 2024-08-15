@@ -1,0 +1,53 @@
+<div class="container mt-4">
+  
+      <div class="card-body">
+        
+        <form (ngSubmit)="updateTask()" #taskForm="ngForm" class="custom-form">
+            <h2 class="card-title text-center mb-4"><i class="fa fa-edit"></i> Update Task </h2>
+          <input type="hidden" name="id" [(ngModel)]="task.id" />
+
+          <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input type="text" class="form-control" id="title" name="title" [(ngModel)]="task.title" required>
+          </div>
+
+      
+          <div class="mb-3">
+            <label for="startDate" class="form-label">Start Date</label>
+            <input type="date" class="form-control" id="startDate" name="startDate" [(ngModel)]="task.startDate" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="dueDate" class="form-label">Due Date</label>
+            <input type="date" class="form-control" id="dueDate" name="dueDate" [(ngModel)]="task.dueDate" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="priority" class="form-label">Priority</label>
+            <select class="form-select" id="priority" name="priority" [(ngModel)]="task.priority" required>
+              <option value="" disabled selected>Select Priority</option>
+              <option value="High">High</option>
+              <option value="Medium">Medium</option>
+              <option value="Low">Low</option>
+            </select>
+          </div>
+
+    
+          <div class="mb-3">
+            <label for="status" class="form-label">Status</label>
+            <select class="form-select" id="status" name="status" [(ngModel)]="task.status" required>
+              <option value="" disabled selected>Select Status</option>
+              <option value="Pending">Pending</option>
+              <option value="InProgress">In Progress</option>
+              <option value="Completed">Completed</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-update">
+            <i class="bi bi-save me-1"></i> Update Task
+          </button>
+        </form>
+      </div>
+    </div>
+    
+ 

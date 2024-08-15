@@ -1,0 +1,61 @@
+/* Style the table itself */
+table {
+    width: 100%; /* Ensures table fills the container */
+    border-collapse: collapse; /* Removes borders between table cells for a cleaner look */
+  }
+  
+  /* Style table headers */
+  .thead-dark th {
+    color: #fff; /* White text color */
+    background-color: #343a40; /* Dark background color */
+    border-color: #343a40; /* Dark border color */
+    padding: 10px 15px; /* Add some padding for better spacing */
+  }
+  
+  /* Style table body */
+  tbody tr {
+    /* Add a hover effect with slightly lighter background color */
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  tbody tr:hover {
+    background-color: #e9ecef; /* Light gray background on hover */
+  }
+  
+  tbody td {
+    padding: 10px 15px; /* Add padding for better spacing */
+    border-color: #ddd; /* Light border color */
+  }
+  .table th, .table td {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.status-pending {
+    background-color: #ffa2a2;
+    color: #000000;
+}
+
+.status-inprogress {
+    background-color: #fff79f;
+    color: #000000;
+}
+
+.status-completed {
+    background-color: #9dfab3;
+    color: #000000;
+}
+
+/* Additional styles to make sure the text color is consistent across different browsers */
+select.form-control.form-control-sm {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.25rem;
+}
+
+select.form-control.form-control-sm:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}

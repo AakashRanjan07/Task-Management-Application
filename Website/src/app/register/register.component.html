@@ -1,0 +1,50 @@
+
+
+    <div class="container">
+        <div class="inner-container">
+            <div class="panel left-panel">
+                <div class="overlay-panel overlay-left">
+                    <h1>Let's Register Account!</h1>
+                    <p>Enter your information to create an account.</p>
+                    <span>Already have an account?</span>
+                <div class="mt-4">   <a class="ghost" id="signIn" style="cursor:pointer" (click)="handleClick()">Log In</a></div>
+                </div>
+            </div>
+            <div class="panel right-panel">
+                <div id="signup" class="w-100 py-5">
+                    <div class="row">
+                        <div class="col">
+                            <h5 class="text-center fs-2 fw-bold">Signup</h5>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center align-items-between mt-5">
+                        <div class="col-10">
+                            <form (submit)="onSubmit()">
+                                <div class="row mb-4">
+                                    <div class="col">
+                                        <h6>Name</h6>
+                                        <input type="text" class="form-control" name="username" [(ngModel)]="username" />
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col">
+                                        <h6>Email</h6>
+                                        <input type="text" class="form-control" id="email" name="email" ngModel #emailInput="ngModel" [(ngModel)]="email">
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col">
+                                        <h6>Password</h6>
+                                        <input type="password" class="form-control" id="password" name="password" ngModel #passwordInput="ngModel" [(ngModel)]="password">
+                                    </div>
+                                </div>
+                                <button style="background: linear-gradient(to right, #ff4b2b, #ff416c);" type="submit" class="btn form-control">Continue</button>
+                                
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    

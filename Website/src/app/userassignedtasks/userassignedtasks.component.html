@@ -1,0 +1,45 @@
+<div class="container mt-4">
+  <h1 class="display-4 mb-4">Task List</h1>
+
+  <div class="table-responsive">
+    <table class="table table-hover table-striped">
+      <thead class="thead-dark">
+        <tr>
+          
+          <th scope="col">Tasks Title</th>
+          <th scope="col">Start Date</th>
+          <th scope="col">Due Date</th>
+          <th scope="col">Priority</th>
+          <th scope="col">Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let task of tasks">
+          <td>{{ task.title }}</td>
+          <td>{{ formatDate( task.startDate) }}</td>
+          <td>{{ formatDate(task.dueDate) }}</td>
+          <td [ngClass]="{
+            'text-danger': task.priority === 'High',
+            'text-warning': task.priority === 'Medium',
+            'text-success': task.priority === 'Low'
+          }">{{ task.priority }}</td>
+          <td>
+            <div class="form-group mb-0">
+              <select class="form-control form-control-sm" [(ngModel)]="task.status" (change)="updateStatus(task)" 
+        [ngClass]="{
+            'status-pending': task.status === 'Pending',
+            'status-inprogress': task.status === 'InProgress',
+            'status-completed': task.status === 'Completed'
+        }">
+    <option value="Pending">Pending</option>
+    <option value="InProgress">InProgress</option>
+    <option value="Completed">Completed</option>
+</select>
+            </div>
+            
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

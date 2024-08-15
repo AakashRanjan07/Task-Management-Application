@@ -1,0 +1,10 @@
+<div class="container d-flex flex-column align-items-center justify-content-center mt-5">
+    <h1 class="mb-4 text-center"><i class="fa fa-bell text-warning"></i> Notifications</h1>
+    <div class="w-100" *ngFor="let notification of notifications">
+      <div class="card mb-3 mx-auto" style="max-width: 500px;">
+        <div class="card-body">
+          <p class="card-text"><i class="fa-solid fa-circle-user fa-2x" style="color: #74C0FC;"></i>  {{ notification }}</p>
+        </div>
+      </div>
+    </div>
+  </div>

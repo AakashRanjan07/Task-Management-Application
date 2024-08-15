@@ -1,0 +1,102 @@
+<div class="container mt-4 ">
+    <div class="row">
+        <div class="col">
+            <h2 class="current-datetime">{{ formattedDate }}</h2>
+            <h1 class="greeting">Hi, {{ username }}!</h1>
+        </div>
+    </div>
+</div>
+<div class="container mt-2">
+    <div class="row justify-content-center">
+      <div class="col-sm-6 col-md-3">
+        <div class="card" style="background: linear-gradient(to bottom, rgb(107, 177, 176), #619aad);">
+          <div class="card-body">
+            <h5 class="card-title">Total Tasks</h5>
+            <p class="card-text mb-0">1</p>
+            <div class="d-flex justify-content-end mt-0">
+              <i class="fas fa-tasks fa-3x" style="color:#FFD43B;"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="card " style="background: linear-gradient(to right, #d56c6c 0%, #e08989 50%, #e46e6c 100% );">
+          <div class="card-body">
+            <h5 class="card-title">New Tasks</h5>
+            <p class="card-text mb-0">4</p>
+            <div class="d-flex justify-content-end mt-0">
+              <i class="fas fa-plus-circle fa-3x" style="color: #4E54C8;"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="card " style="background: linear-gradient(to right, #6f8bed, #4986e0, #667fe3);">
+          <div class="card-body">
+            <h5 class="card-title">Due Tasks</h5>
+            <p class="card-text mb-0">5</p>
+            <div class="d-flex justify-content-end mt-0">
+              <i class="fas fa-exclamation-circle fa-3x" style="color: #B197FC "></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="card" style="background: linear-gradient(to right, #a878db 0%, #a761e0 100%);">
+          <div class="card-body">
+            <h5 class="card-title">Completed Tasks</h5>
+            <p class="card-text mb-0">6</p>
+            <div class="d-flex justify-content-end mt-0">
+              <i class="fas fa-check-circle fa-3x" style="color: #000000;"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <div style="font-weight:500;" class="card-header fs-4 text-center text-success">
+            Upcoming Tasks
+          </div>
+          <div class="card-body">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">Task Title</th>
+                  <th scope="col">Due Date</th>
+                  <th scope="col">Priority</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let task of tasks">
+                  <td>{{ task.title }}</td>
+                  <td>{{ task.dueDate | date }}</td>
+                  <td>{{ task.priority }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mx-auto">
+        <div class="card mb-3">
+          <div class="card-header fs-4 text-center text-primary">
+            Notifications
+          </div>
+          <div class="card-body">
+            <table class="table table-hover table-striped">
+              <tbody>
+                <tr *ngFor="let notification of notifications">
+                  <td class="text-center notification-cell">
+                    {{ notification }}
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>

@@ -1,0 +1,35 @@
+<div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header text-center">
+            <h4>Feedback Form</h4>
+          </div>
+          <div class="card-body">
+            <form (ngSubmit)="onSubmit()">
+              <div class="mb-3">
+                <label for="name" class="form-label">Name:</label>
+                <div class="input-group mt-2">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="bi bi-person-fill"></i></span>
+                  </div>
+                  <input type="text" class="form-control" id="Name" name="Name" placeholder="Enter your name" [(ngModel)]="feedback.name" required>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="feedback" class="form-label">Comments:</label>
+                <div class="input-group mt-2">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="bi bi-chat-dots-fill"></i></span>
+                  </div>
+                  <textarea class="form-control" id="feedback" name="feedback" rows="5" placeholder="Enter your comments" [(ngModel)]="feedback.feedbackText" required></textarea>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block mt-3"><i class="fas fa-paper-plane"></i> Submit Feedback</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
